@@ -1,0 +1,29 @@
+@media (max-width: 1366px){
+	.banner-slider .slick-track{
+    height: 600px;
+   }
+	/* .banner-thumb {
+		top: -135px;
+	}  */
+	.thumb-content{
+		height: 225px;
+	}
+	.slick-center{
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+}
+@media (max-width: 767px){
+	.video-desk{
+		display: none;
+	}
+	.overlay-div{
+		position: relative;
+	}
+	.overlay-div .mob-video-img{
+		display: block;
+	}
+}
