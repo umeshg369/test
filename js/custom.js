@@ -19,24 +19,12 @@ jQuery(document).ready(function($){
       {
 	      breakpoint: 800,
 	      settings: {
-	        dots: false,
-					arrows:true,
-					infinite: false,
-					speed: 300,
-					autoplay: false,
-					autoplaySpeed: 5000,
 					slidesToShow: 2,
 			  }
       },
       {
         breakpoint: 741,
         settings: {
-          dots: false,
-					arrows:true,
-					infinite: false,
-					speed: 300,
-					autoplay: false,
-					autoplaySpeed: 5000,
 					slidesToShow: 1,
          }
       }
@@ -53,19 +41,21 @@ jQuery(document).ready(function($){
 	  touchMove: false,
 		touchThreshold: 0,
 	  responsive: [
+	  	{
+	      breakpoint: 1150,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	    },
 	    {
 	      breakpoint: 768,
 	      settings: {
-	        arrows: false,
-	        centerMode: true,
 	        slidesToShow: 3
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        arrows: false,
-	        centerMode: true,
 	        slidesToShow: 1
 	      }
 	    }

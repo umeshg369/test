@@ -16,6 +16,37 @@
 		transform: scale(1.2);
 	}
 }
+@media (max-width: 1250px){
+	.content{
+		width: 100%;
+		padding: 0 30px;
+	}
+}
+@media (max-width: 1150px){
+	.banner-thumb .slick-list {
+	  padding: 0 55px !important;
+	}
+}
+@media (max-width: 1080px){
+	nav{
+    margin: 6px 0 0;
+	}
+	nav li{
+		padding: 0 0 0 20px;
+    line-height: 40px;
+	}
+	nav a:after{
+		margin-top: -8px;
+	}
+}
+@media (max-width: 1000px){
+	header{
+		top: 20px;
+	}
+	.content{
+		padding: 0 20px;
+	}
+}
 @media (max-width: 767px){
 	.video-desk{
 		display: none;
