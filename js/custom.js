@@ -139,4 +139,8 @@ jQuery(document).ready(function($){
 		$(".video-pop video").get(0).play();
   });
 
+  $(".mobIcon").click(function(){
+		$(".top nav").stop().slideToggle();
+	});
+
 });
