@@ -757,13 +757,16 @@ nav li.active a:after{
 }
 .signup{
 	width: 100%;
-	display: flex;
-	min-height: 100vh;
+	display: block;
+	text-align: center;
+	margin-top: 120px;
 }
 .signup-left{
-	width: 35%;
+	width: 70%;
 	background: #fff;
 	padding: 25px 30px;
+	display: inline-block;
+	min-height: 80vh;
 }
 .signup-right{
 	width: 65%;
@@ -874,11 +877,12 @@ nav li.active a:after{
 	outline: none;
 	border: 1px solid #ccc;
 }
-.fullName input{
+.fullName .firstname, .fullName .lastname{
 	width: 48%;
 	display: inline-block;
+	position: relative;
 }
-.fullName input.firstname{
+.fullName .firstname{
 	margin: 0 4% 0 0;
 	float: left;
 }
