@@ -66,13 +66,13 @@ jQuery(document).ready(function($){
 	$(".step-slider").slick({
 		dots: false,
 		arrows:false,
-		infinite: false,
+		infinite: true,
 		speed: 300,
 		autoplay: false,
 		autoplaySpeed: 5000,
-		fade: true,
 		touchMove: false,
 		touchThreshold: 0,
+		centerMode: true,
 		slidesToShow: 1,
 		asNavFor: '.step-nav'
 	});
@@ -142,5 +142,30 @@ jQuery(document).ready(function($){
   $(".mobIcon").click(function(){
 		$(".top nav").stop().slideToggle();
 	});
+
+	$(".accord-btn").each(function () {
+		$(this).click(function () {
+			if ($(this).hasClass("active")) {
+		  	$(this).next().slideUp();
+		      $(this).removeClass("active");
+		  } else {
+	      $(".active").each(function () {
+	      	$(this).next().slideUp();
+	          $(this).removeClass("active");
+	      });
+	      $(this).next().slideDown();
+	      $(this).addClass("active");
+		  }
+		  return false;
+		});
+  });
+	function scrollToDiv(element){
+		var offset = element.offset();
+		var offsetTop = offset.top - 40;
+		//console.log(offsetTop);
+		$('body,html').animate({
+			scrollTop: offsetTop
+		}, 500);
+	}
 
 });
