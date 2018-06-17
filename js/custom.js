@@ -232,4 +232,8 @@ jQuery(document).ready(function($){
 	  });
   });
 
+  $(".my-account span").click(function () {
+  	 $(this).parent().find('ul').stop(true, true).slideToggle();
+  });
+
 });
