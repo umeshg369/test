@@ -94,9 +94,12 @@ nav ul{
 .connect .box-thumb, .box-thumb p{
 	text-align: center;
 }
-video{
+.dashboard-bg video{
 	width: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
+/* .play-vid-btn{
+	display: none;
+} */

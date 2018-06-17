@@ -253,7 +253,7 @@ nav li.active a:after{
 	margin: 10px;
 	transition: all 300ms ease;
 }
-.banner-thumb .slick-arrow{
+.banner-thumb .slick-arrow, .videolib-slider .slick-arrow{
 	position: absolute;
 	top: 45%;
 	left: 25px;
@@ -273,7 +273,7 @@ nav li.active a:after{
   -o-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s;
 }
-.banner-thumb .slick-next{
+.banner-thumb .slick-next, .videolib-slider .slick-next{
 	left: inherit;
 	right: 25px;
   transform: rotate(180deg);
@@ -282,7 +282,7 @@ nav li.active a:after{
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
-.banner-thumb .slick-arrow:hover{
+.banner-thumb .slick-arrow:hover, .videolib-slider .slick-arrow:hover{
 	opacity: 0.8;
 }
 .title{
@@ -700,7 +700,7 @@ nav li.active a:after{
 .slick-active .video-banner{
 	display: inline-block;
 } 
-.video-banner{
+.video-banner, .video-lib-detail{
 	width: 75px;
 	height: 75px;
 	position: absolute;
@@ -723,9 +723,11 @@ nav li.active a:after{
   color: #fff;    
   width: 90%;       
   box-sizing:border-box;
-  z-index: 4;
+  z-index: 999;
   height: 100%;
-  top: 0 !important;
+}
+.home .video-pop{
+	top: 0 !important;
 }
 .video-pop video{
 	width: 100%;
@@ -739,7 +741,7 @@ nav li.active a:after{
   width: 100%;    
   top: 0;   
   left: 0;    
-  z-index: 3;   
+  z-index: 999;   
 }   
 .simplePopupClose {   
   position: absolute;   

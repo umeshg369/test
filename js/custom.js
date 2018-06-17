@@ -147,11 +147,11 @@ jQuery(document).ready(function($){
 		$(this).click(function () {
 			if ($(this).hasClass("active")) {
 		  	$(this).next().slideUp();
-		      $(this).removeClass("active");
+		    $(this).removeClass("active");
 		  } else {
 	      $(".active").each(function () {
 	      	$(this).next().slideUp();
-	          $(this).removeClass("active");
+	        $(this).removeClass("active");
 	      });
 	      $(this).next().slideDown();
 	      $(this).addClass("active");
@@ -167,5 +167,69 @@ jQuery(document).ready(function($){
 			scrollTop: offsetTop
 		}, 500);
 	}
+
+	$('.videolib-one, .videolib-two').slick({
+		autoplay: false,
+	  infinite: true,
+	  slidesToShow: 3,
+	  touchMove: false,
+		touchThreshold: 0,
+	  responsive: [
+	  	{
+	      breakpoint: 1150,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+	});
+
+	$('.videolib-slider li').each(function () {
+  	$(this).click(function(){
+  		$('.videolib-slider li').removeClass("lib-active");
+  		$(this).addClass("lib-active");
+  		var b = $(this).attr("slide-data");
+	  	$(this).parents(".videolib-slider").find('.videolib-detail').each(function () {
+  			var c = $(this).attr("slide-data");
+  			if ( b == c) {
+	  			$('.videolib-detail').fadeOut()
+		  		$(this).fadeIn();
+	  		}
+		  });
+  	});
+  });
+
+	$(".close-lib-btn").click(function () {
+  	$('.videolib-detail').fadeOut()
+  });
+
+  $('.video-lib-detail').click(function () {
+  	var a = $(this).attr("data-video");
+  	$(".video-pop video").attr("src", a);
+		$(".video-pop").simplePopup();
+		$(".video-pop video").get(0).play();
+  });
+
+  $('.tab-data .clickme a').each(function(){
+    $(this).click(function(){
+	    $(this).parents(".tab-data").find('.clickme a').removeClass('active');
+	    $(this).addClass('active');
+	    var tagid = $(this).data('tag');
+	    $(this).parents(".tab-data").find('.list').removeClass('show-tab');
+	    $(this).parents(".tab-data").find('#'+tagid).addClass('show-tab');
+	  });
+  });
 
 });
