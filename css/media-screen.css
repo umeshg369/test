@@ -301,6 +301,12 @@
 		display: block;
 		padding: 20px 0;
 	}
+	.videolib-slider li{
+		margin: 0 5px;
+	}
+	.videolib-slider .slick-list{
+		padding: 0 20px 0 0;
+	}
 }
 @media (max-width: 360px){
 	.tab-data .clickme a{
