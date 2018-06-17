@@ -190,7 +190,8 @@ jQuery(document).ready(function($){
 	    {
 	      breakpoint: 480,
 	      settings: {
-	        slidesToShow: 1
+	        slidesToShow:2,
+	        touchMove: true,
 	      }
 	    }
 	  ]
@@ -230,10 +231,6 @@ jQuery(document).ready(function($){
 	    $(this).parents(".tab-data").find('.list').removeClass('show-tab');
 	    $(this).parents(".tab-data").find('#'+tagid).addClass('show-tab');
 	  });
-  });
-
-  $(".my-account span").click(function () {
-  	 $(this).parent().find('ul').stop(true, true).slideToggle();
   });
 
 });

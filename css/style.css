@@ -1170,16 +1170,19 @@ nav li.active a:after{
 .my-account ul{
 	display: none;
 	position: absolute;
-  border: 1px solid #fff;
-  background: rgba(0, 0, 0, 0.18);
   width: 100%;
   margin: 10px 0 0;
+  z-index: 1;
+  top: 0;
+  padding: 58px 0 0;
 }
 .my-account ul li{
 	width: 100%;
   padding: 0;
   line-height: normal;
   float: none;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.18);
 }
 .my-account ul li + li{
 	border-top: 1px solid #fff;
@@ -1191,8 +1194,15 @@ nav li.active a:after{
 	width: 100%;
 	display: block;
 	padding: 12px;
+	font-weight: normal;
 	text-transform: inherit;
 }
 .my-account ul li a:after{
 	display: none;
+}
+.my-account span:hover + ul {
+	display: block;
+}
+.my-account ul:hover{
+	display: block;
 }
