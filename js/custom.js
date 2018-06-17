@@ -192,6 +192,7 @@ jQuery(document).ready(function($){
 	      settings: {
 	        slidesToShow:2,
 	        touchMove: true,
+	        touchThreshold: 5,
 	        arrows:false,
 	      }
 	    }
