@@ -134,6 +134,34 @@
     width: auto;
     margin: 0;
     float: left;
+    line-height: normal;
+    max-width: 280px;
+    text-align: left;
+    padding: 15px 0;
+	}
+	nav .my-account{
+		border-top: 1px solid #fff;
+	}
+	.my-account img{
+		width: 50px;
+		height: 50px;
+		margin: 5px 0 0;
+	}
+	.top nav .my-account ul{
+		padding: 0 0 5px;
+		position: relative;
+		display: none;
+	}
+	.top nav .my-account span:hover + ul{
+		display: block;
+	}
+	.my-account ul li{
+		border: none;
+		border-top: 1px solid #fff;
+		text-align: left;
+	}
+	.my-account ul li a{
+		padding: 12px 0;
 	}
 	.banner-slider .slick-track {
     height: 465px;
