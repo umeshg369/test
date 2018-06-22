@@ -171,14 +171,12 @@ jQuery(document).ready(function($){
 	$('.videolib-one, .videolib-two').slick({
 		autoplay: false,
 	  infinite: true,
-	  slidesToShow: 3,
-	  touchMove: false,
-		touchThreshold: 0,
+	  slidesToShow: 5,
 	  responsive: [
 	  	{
 	      breakpoint: 1150,
 	      settings: {
-	        slidesToShow: 3
+	        slidesToShow: 5
 	      }
 	    },
 	    {
@@ -215,7 +213,8 @@ jQuery(document).ready(function($){
   });
 
 	$(".close-lib-btn").click(function () {
-  	$('.videolib-detail').fadeOut()
+  	$('.videolib-detail').fadeOut();
+  	$('.videolib-slider li').removeClass("lib-active");
   });
 
   $('.video-lib-detail').click(function () {

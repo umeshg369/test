@@ -623,6 +623,7 @@ nav li.active a:after{
 	display: block;
 	border-top: 1px solid #2e2e2e;
 	padding: 45px 0;
+	float: left;
 }
 .foot-left{
 	width: 65%;

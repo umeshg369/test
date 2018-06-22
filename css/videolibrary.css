@@ -119,11 +119,11 @@ nav ul{
 	margin-bottom: 35px;
 }
 .videolib-slider ul{
-	margin: 0 -18px;
+	margin: 0;
 }
 .videolib-slider li{
 	position: relative;
-	margin: 0 18px;
+	margin: 0 10px 0 0;
 	cursor: pointer;
 }
 .videolib-slider li:before{
@@ -188,6 +188,7 @@ nav ul{
 	padding-bottom: 7px;
   margin: 0 0 -7px;
   z-index: 1;
+  overflow: inherit;
 }
 .close-lib-btn{
 	position: absolute;
@@ -254,4 +255,41 @@ nav ul{
 }
 .tab-div{
 	margin: -170px 0 0;
+}
+.videolib-slider .slick-list{
+	padding: 0 50px 0 0;
+}
+h3.title{
+	color: #fff;
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+.videolib-slider li strong{
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  width: 100%;
+  display: none;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+.videolib-slider li:hover strong{
+	display: block;
+}
+.videolib-slider li strong span {
+    display: block;
+    color: #bfbdbd;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.videolib-slider li.lib-active strong{
+	display: block;
 }
