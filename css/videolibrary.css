@@ -298,8 +298,16 @@ h3.title{
 .videolib-slider li.lib-active strong{
 	display: block;
 }
-
-
-@media screen and (max-width: 320px) {
-  
+.video-btn{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	background: url(../images/play-btn.png) left top no-repeat;
+	background-size: cover;
+	display: inline-block;
+	cursor: pointer;
+	z-index: 9;
 }
