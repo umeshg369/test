@@ -15,6 +15,20 @@
 		-webkit-transform: scale(1.2);
 		transform: scale(1.2);
 	}
+	.dashboard-banner h2{
+		font-size: 55px;
+	}
+	.dashboard-banner p{
+		font-size: 20px;
+		padding: 10px;
+		margin: 0;
+	}
+	.dashboard-bg{
+		padding: 50% 0 0;
+	}
+	.tab-div{
+		margin: -65px 0 0;
+	}
 }
 @media (max-width: 1250px){
 	.content{
@@ -73,6 +87,88 @@
 	.banner-slider .slick-track {
     height: 500px;
 	}
+}
+@media (max-width: 1024px) {
+	.tab-div{
+		margin: 30px 0 0;
+	}
+	.tab-div .title?{
+		margin-bottom: 30px;
+	}
+	.videolib-slider li.lib-active:before{
+		border-width: 3px;
+	}
+	.videolib-slider li.lib-active strong, .videolib-slider li:hover strong{
+		display: none;
+	}
+  ul.be-select-tab.tab-select {
+   	border: 1px solid #d0cdcd;
+   	border-radius: 5px;
+    padding: 0 10px;
+    overflow: inherit;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    z-index: 9;
+    white-space: inherit;
+    width: 250px;
+    min-width: 170px;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  ul.be-select-tab.tab-select li {
+    display: none;
+    font-size: 1.143em;
+    font-weight: 400;
+    margin: 0;
+    opacity: .8;
+    padding: 8px 0;
+    width: 100%;
+  }
+  ul.be-select-tab.tab-select li.active {
+    align-items: center;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.be-select-tab.tab-select.active li.active a{
+  	color: #b4b72f;
+  }
+  ul.be-select-tab.tab-select li a {
+    border: none;
+    opacity: 1;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    font-weight: 400;
+    color: #d0cdcd;
+  }
+  ul.be-select-tab.tab-select li a.active {
+    border: none;
+    position: relative;
+  }
+  ul.be-select-tab.tab-select:after {
+    content: "\e907";
+    font-size: 0.9em;
+    font-family: icomoon;
+    color: #b4b72f;
+    font-weight: 700;
+    position: absolute;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+  }
+
+  ul.be-select-tab.active li {
+    display: block;
+  }
+  .tab-data .clickme a.active, .tab-data .clickme a:hover, .tab-data .clickme.active a, .tab-data .clickme.active a:hover {
+    color: #fff;
+    border: none;
+  }
+  ul.be-select-tab.active li a.active:after {
+    display: none;
+  }
 }
 @media (max-width: 1000px){
 	header{
@@ -241,6 +337,23 @@
 		line-height: 50px;
 	}
 }
+@media (max-width: 768px){
+	.dashboard-banner h2{
+		font-size: 35px;
+	}
+	.content p {
+    font-size: 18px;
+	}
+	.title{
+		font-size: 26px;
+	}
+	.tab-data .title{
+		margin-bottom: 30px;
+	}
+	ul.be-select-tab.tab-select{
+		top: -4px;
+	}
+}
 @media (max-width: 767px){
 	.video-desk{
 		display: none;
@@ -354,6 +467,7 @@
 	}
 	.dashboard-banner-text p{
 		margin: 5px 0 0;
+		padding: 0;
 	}
 	.videolib-detail .dashboard-bg{
 		padding: 60% 0 0;
@@ -362,17 +476,25 @@
 		display: block;
 		padding: 20px 0;
 	}
+	.dashboard-bg{
+		background-position: center -35px;
+	}
 	.videolib-slider li{
 		margin: 0 5px;
 	}
 	.videolib-slider .slick-list{
 		padding: 0 20px 0 0;
 	}
-	.videolib-slider li:hover strong{
-		display: none;
+	ul.be-select-tab.tab-select {
+    right: inherit;
+    left: 15px;
+    top: 40px;
 	}
-	.videolib-slider li.lib-active strong{
-		display: none;
+	ul.be-select-tab.tab-select:after{
+		top: 11px;
+	}
+	.tab-container{
+		margin: 75px 0 0;
 	}
 }
 @media (max-width: 360px){
@@ -384,4 +506,12 @@
 	.tab-data .clickme a{
 		padding: 0 7px 10px;
 	}
+	ul.be-select-tab.tab-select li {
+    font-size: 1.02em;
+    padding: 10px 0;
+  }
+  ul.be-select-tab.tab-select li a.active:after {
+    font-size: .75em;
+    right: -20px;
+  }
 }
