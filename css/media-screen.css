@@ -496,6 +496,11 @@
 	.tab-container{
 		margin: 75px 0 0;
 	}
+	.video-btn{
+		width: 30px;
+		height: 30px;
+		margin: -15px 0 0 -15px;
+	}
 }
 @media (max-width: 360px){
 	.tab-data .clickme a{
