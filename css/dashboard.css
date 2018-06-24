@@ -26,6 +26,7 @@ nav ul{
   font-family: icomoon;
   color: #fff;
   font-weight: 700;
+  cursor: pointer;
 }
 .dashboard-bg{
 	background-repeat: no-repeat;
