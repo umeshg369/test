@@ -197,6 +197,22 @@ jQuery(document).ready(function($){
 	  ]
 	});
 
+	$('.video-cat-list ul').slick({
+		autoplay: false,
+	  infinite: true,
+	  slidesToShow: 4,
+	  arrows:false,
+	  responsive: [
+	  	{
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	        arrows:false
+	      }
+	    }
+	  ]
+	});
+
 	$('.videolib-slider li').each(function () {
   	$(this).click(function(){
   		$('.videolib-slider li').removeClass("lib-active");
@@ -296,8 +312,8 @@ jQuery(document).ready(function($){
   });
   // Tab navigation into select dropdown for mobile
 
-  $(".video-cat-list .img-div").click(function () {
-    
+  $(".search-icon").click(function () {
+    $(".search-box").stop(true,true).slideToggle();
   });
 
 });

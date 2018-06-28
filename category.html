@@ -29,8 +29,11 @@
 		  	</div>
 		  	<nav>
 		  		<ul>                                    
-			  			<li><a href="#browse">Browse</a></li>
+			  			<li><a href="#browse">Dashboard</a></li>
 			  			<li><a href="#video">video Library</a></li>
+			  			<li>
+			  				<span class="search-icon"></span>
+			  				<div class="search-box"><input type="text" placeholder="Search...">
 		  		</ul>
 			  	<div class="my-account">
 			  		<a href="">John smith</a>
@@ -64,15 +67,359 @@
 						<div class="tab-data">
 					 		<h2 class="title">Technical</h2>
 					   	<ul class="be-select-tab">
-					      <li class="clickme active"><a data-tag="one">All Videos</a></li>
-					      <li class="clickme"><a data-tag="two">S-cat A</a></li>
+					      <li class="clickme"><a data-tag="one">All Videos</a></li>
+					      <li class="clickme active"><a data-tag="two">S-cat A</a></li>
 					      <li class="clickme"><a data-tag="three">S-cat B</a></li>
 					      <li class="clickme"><a data-tag="four">S-cat C</a></li>
 					      <li class="clickme"><a data-tag="five">S-cat D</a></li>
 					      <li class="clickme"><a data-tag="six">S-cat E</a></li>
 					    </ul>       
 					    <div class="tab-container">
-					      <div class="list show-tab" id="one">
+					      <div class="list" id="one">
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
 									<div class="video-cat-list">
 										<ul>
 											<li slide-data="1">
@@ -160,7 +507,7 @@
 										</div>
 									</div>
 					    	</div>
-					    	<div class="list" id="two">
+					    	<div class="list show-tab" id="two">
 									<div class="video-cat-list">
 										<ul>
 											<li slide-data="1">
@@ -233,6 +580,158 @@
 												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
 											</div>
 											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
 												<div class="close-lib-btn"></div>
 												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
 													<div class="dashboard-banner">
@@ -321,6 +820,204 @@
 												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
 											</div>
 											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="2">
+												<div class="img-div">
+													<img src="images/arantxa.jpg" alt="Arantxa Sánchez">
+							    				<strong>Arantxa Sánchez<span>Tennis Player</span></strong>
+													<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="3">
+												<div class="img-div">
+														<img src="images/nadia.jpg" alt="Nadia Petrova">
+								    				<strong>Nadia Petrova<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+											<li slide-data="4">
+												<div class="img-div">
+														<img src="images/emilio.jpg" alt="Emilio Sanchez">
+								    				<strong>Emilio Sanchez<span>Tennis Player</span></strong>
+														<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="2" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="3" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+											<div slide-data="4" class="videolib-detail">
+												<div class="close-lib-btn"></div>
+												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
+													<div class="dashboard-banner">
+										        <div class="dashboard-banner-text">
+											        <h2>Rafa Nadal</h2>
+											        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+															elit. Proin efficitur et lorem eu malesuada.</p>
+										        </div>
+										     	</div>
+												</div>
+												<div class="video-lib-detail" data-video="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></div>
+											</div>
+										</div>
+									</div>
+									<div class="video-cat-list">
+										<ul>
+											<li slide-data="1">
+												<div class="img-div">
+													<img src="images/tim.jpg" alt="Tim Mayotte">
+							    				<strong>Tim Mayotte<span>Tennis Player</span></strong>
+							    				<div class="video-btn"></div>
+												</div>
+											</li>
+										</ul>
+										<div id="video-detail-drop">
+											<div slide-data="1" class="videolib-detail">
 												<div class="close-lib-btn"></div>
 												<div class="banner dashboard-bg" style="background-image: url(images/dashboard-bg.jpg);">
 													<div class="dashboard-banner">

@@ -84,6 +84,7 @@ header{
 }
 .tab-data ul{
 	padding: 0 1%;
+	z-index: 1;
 }
 .category-page .img-div strong{
 	padding: 10px;
@@ -150,19 +151,20 @@ header{
 	color: #fff;
 }
 .category-page .tab-data .title:after{
-	content: "\e907";
-  font-size: 0.85em;
-  font-family: icomoon;
-  color: #000;
-  font-weight: 700;
-  transform: rotate(-90deg);
-  -webkit-transform:rotate(-90deg);
-  -moz-transform:rotate(-90deg);
-  -ms-transform:rotate(-90deg);
-  -o-transform:rotate(-90deg);
+	content: "";
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: #bdc928;
-  border-radius: 50%;
+  background: url(../images/title-arw.jpg) left top no-repeat;
+  margin: 0 0 0 15px;
+}
+.video-cat-list .slick-arrow{
+	display: none;
+}
+.video-cat-list .slick-track{
+	margin: 0;
+}
+.category-page .dashboard-bg:after{
+	padding: 0;
+	bottom: 0;
 }
