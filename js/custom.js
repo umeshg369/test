@@ -212,9 +212,30 @@ jQuery(document).ready(function($){
   	});
   });
 
+  $('.video-cat-list li').each(function () {
+  	$(this).click(function(){
+  		$('.video-cat-list li').removeClass("lib-active");
+  		$(this).addClass("lib-active");
+  		var b = $(this).attr("slide-data");
+	  	$(this).parents(".video-cat-list").find('.videolib-detail').each(function () {
+  			var c = $(this).attr("slide-data");
+  			if ( b == c) {
+	  			$('.videolib-detail').fadeOut()
+		  		$(this).fadeIn();
+		  		if ($(window).width() < 768) {
+		  			//alert();
+			  		$('html,body').delay(500).animate({
+				      scrollTop: $("#video-detail-drop").offset().top
+				    });
+		  		}
+	  		}
+		  });
+  	});
+  });
+
 	$(".close-lib-btn").click(function () {
   	$('.videolib-detail').fadeOut();
-  	$('.videolib-slider li').removeClass("lib-active");
+  	$('.videolib-slider li, .video-cat-list li').removeClass("lib-active");
   });
 
   $('.video-lib-detail').click(function () {
@@ -274,5 +295,9 @@ jQuery(document).ready(function($){
     }
   });
   // Tab navigation into select dropdown for mobile
+
+  $(".video-cat-list .img-div").click(function () {
+    
+  });
 
 });
