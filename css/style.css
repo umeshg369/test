@@ -131,7 +131,7 @@ nav li.active a:after{
 }
 .banner-content:before{
 	content: "";
-	background-image: url(../images/banner-bg.png);
+	background-image: url(../img/banner-bg.png);
 	background-position: left top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -227,7 +227,7 @@ nav li.active a:after{
 	font-size: 24px;
 	font-weight: normal;
 	width: 100%;
-	background: url(../images/thumb-bg.png) left bottom repeat-x;
+	background: url(../img/thumb-bg.png) left bottom repeat-x;
 }
 .thumb-content strong span{
 	display: block;
@@ -261,7 +261,7 @@ nav li.active a:after{
 	width: 32px;
 	height: 32px;
 	margin: -16px 0 0;
-	background: url(../images/arw.png) left top no-repeat;
+	background: url(../img/arw.png) left top no-repeat;
 	background-size: cover;
 	overflow: hidden;
   text-indent: 1000px;
@@ -327,7 +327,7 @@ nav li.active a:after{
 	display: inline-block;
 	width: 25px;
 	height: 38px;
-	background: url(../images/arrow.jpg) left top no-repeat;
+	background: url(../img/arrow.jpg) left top no-repeat;
 	position: absolute;
 	bottom: 0;
   left: 50%;
@@ -366,7 +366,7 @@ nav li.active a:after{
 	font-size: 30px;
 	font-weight: normal;
 	width: 100%;
-	background: url(../images/browse-bg.png) left bottom repeat-x;
+	background: url(../img/browse-bg.png) left bottom repeat-x;
 	transition: 0.3s ease all;
 	-webkit-transition: 0.3s ease all;
 	-moz-transition: 0.3s ease all;
@@ -426,7 +426,7 @@ nav li.active a:after{
 	font-size: 30px;
 	color: #fff;
 	font-weight: 700;
-	background: url(../images/video-btn.jpg) center top repeat-y;
+	background: url(../img/video-btn.jpg) center top repeat-y;
 	border-radius: 30px;
 	padding: 15px 50px;
 }
@@ -496,7 +496,7 @@ nav li.active a:after{
 .download{
 	width: 100%;
 	display: block;
-	background: url(../images/dwnld-bg.jpg) right top no-repeat;
+	background: url(../img/dwnld-bg.jpg) right top no-repeat;
 	background-size: cover;
 }
 .download-data{
@@ -607,7 +607,7 @@ nav li.active a:after{
 	top: 0;
 	width: 60px;
 	height: 40px;
-	background: url(../images/submit-btn.jpg) center top no-repeat;
+	background: url(../img/submit-btn.jpg) center top no-repeat;
 	border: none;
 	cursor: pointer;
 }
@@ -708,7 +708,7 @@ nav li.active a:after{
 	top: 50%;
 	left: 50%;
 	margin: -37.5px 0 0 -37.5px;
-	background: url(../images/play-btn.png) left top no-repeat;
+	background: url(../img/play-btn.png) left top no-repeat;
 	background-size: cover;
 	display: none;
 	cursor: pointer;
@@ -777,7 +777,7 @@ nav li.active a:after{
 }
 .signup-right{
 	width: 65%;
-	background-image: url(../images/signup-img.jpg);
+	background-image: url(../img/signup-img.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -1097,7 +1097,7 @@ nav li.active a:after{
 	font-size: 30px;
 	color: #fff;
 	font-weight: 700;
-	background: url(../images/video-btn.jpg) center top repeat-y;
+	background: url(../img/video-btn.jpg) center top repeat-y;
 	border-radius: 30px;
 	padding: 15px 50px;
 	display: inline-block;

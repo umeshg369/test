@@ -19,7 +19,7 @@ header{
   top: 50%;
   left: 50%;
   margin: -22px 0 0 -22px;
-	background: url(../images/play-btn.png) left top no-repeat;
+	background: url(../img/play-btn.png) left top no-repeat;
 	background-size: cover;
 	display: inline-block;
 	cursor: pointer;
@@ -89,7 +89,7 @@ header{
 .category-page .img-div strong{
 	padding: 10px;
 	font-size: 18px;
-	background: url(../images/browse-bg.png) left top repeat-x;
+	background: url(../img/browse-bg.png) left top repeat-x;
 }
 .category-page .img-div:hover strong{
 	padding-bottom: 10px;
@@ -155,7 +155,7 @@ header{
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url(../images/title-arw.jpg) left top no-repeat;
+  background: url(../img/title-arw.jpg) left top no-repeat;
   margin: 0 0 0 15px;
 }
 .video-cat-list .slick-arrow{
