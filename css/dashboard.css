@@ -40,7 +40,7 @@ nav ul{
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: url(../images/dashboard-overlay-bg.png) center bottom repeat-x;
+	background: url(../img/dashboard-overlay-bg.png) center bottom repeat-x;
 	background-size: contain;
 	display: block;
 	width: 100%;

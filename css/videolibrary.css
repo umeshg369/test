@@ -38,8 +38,8 @@ nav ul{
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -23px;
-	background: url(../images/dashboard-overlay-bg.png) center bottom repeat-x;
+	bottom: 0;
+	background: url(../img/dashboard-overlay-bg.png) center bottom repeat-x;
 	background-size: contain;
 	display: block;
 	width: 100%;
@@ -305,7 +305,7 @@ h3.title{
 	top: 50%;
 	left: 50%;
 	margin: -20px 0 0 -20px;
-	background: url(../images/play-btn.png) left top no-repeat;
+	background: url(../img/play-btn.png) left top no-repeat;
 	background-size: cover;
 	display: inline-block;
 	cursor: pointer;
@@ -321,7 +321,7 @@ nav ul li .search-icon{
 	width: 26px;
 	height: 26px;
 	display: inline-block;
-	background: url(../images/search-icon.png) left top no-repeat;
+	background: url(../img/search-icon.png) left top no-repeat;
 	background-size: cover;
 	vertical-align: middle;
 	cursor: pointer;
