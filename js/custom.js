@@ -318,7 +318,7 @@ jQuery(document).ready(function($){
 
   $(".sub-btn button").click(function () {
     $(".payment-popup").removeClass("height-zero").simplePopup();
-    $(".step-two").addClass("active");
+    $(".step-one").addClass("active");
   });
 
 });
