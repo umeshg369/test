@@ -316,4 +316,9 @@ jQuery(document).ready(function($){
     $(".search-box").stop(true,true).slideToggle();
   });
 
+  $(".sub-btn button").click(function () {
+    $(".payment-popup").removeClass("height-zero").simplePopup();
+    $(".step-two").addClass("active");
+  });
+
 });
