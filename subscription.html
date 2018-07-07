@@ -164,24 +164,6 @@
 			<div class="step step-one">
 				<div class="payment">
 					<div class="payment-content">
-						<h2>Details</h2>
-						<div class="field">
-							<label for="">Date</label>
-							<input type="date">
-						</div>
-					</div>
-					<div class="payment-img">
-						<img src="img/payment-img.jpg" alt="">
-						<div class="short-detail">
-							<h3>You are booking</h3>
-							<h2>Rafael Nadal</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="step step-two">
-				<div class="payment">
-					<div class="payment-content">
 						<h2>Review and Pay</h2>
 							<div class="form-fields card-detail">
 								<div class="form-item card-number">
@@ -239,11 +221,7 @@
 										<label>Billing Street</label>
 										<input type="text" placeholder="">
 									</div>
-									<div class="form-item">
-										<label></label>
-										<input type="text" placeholder="Apt #">
-									</div>
-									<div class="form-item">
+									<div class="form-item city">
 										<label>City</label>
 										<input type="text" placeholder="">
 									</div>
@@ -262,7 +240,7 @@
 								</div>
 							</div>
 							<div class="form-fields">
-								<div class="form-item same-add">
+								<div class="form-item check-box same-add">
 									<input type="checkbox" checked=""><span>Shipping Address (same as billing address)</span>
 								</div>
 							</div>
@@ -283,11 +261,7 @@
 										<label>Billing Street</label>
 										<input type="text" placeholder="">
 									</div>
-									<div class="form-item">
-										<label></label>
-										<input type="text" placeholder="Apt #">
-									</div>
-									<div class="form-item">
+									<div class="form-item city">
 										<label>City</label>
 										<input type="text" placeholder="">
 									</div>
@@ -295,8 +269,8 @@
 										<label>State</label>
 										<select>
 											<option value="State">State</option>
-											<option value="New York">New York</option>
-											<option value="Washington">Washington</option>
+											<option value="New York">NY</option>
+											<option value="Washington">NJ</option>
 										</select>
 									</div>
 									<div class="form-item zip">
@@ -314,30 +288,43 @@
 					</div>
 					<div class="payment-img">
 						<img src="img/payment-img.jpg" alt="">
-						<div class="short-detail">
-							<h2>Rafael Nadal</h2>
-							<p>July 13, 2018</p>
-							<p>10:00 am - 10:10 am</p>
-						</div>
 					</div>
 				</div>
 			</div>
-			<div class="step step-three">
+			<div class="step step-two">
 				<div class="payment">
 					<div class="payment-content">
 						<h2>Review your order</h2>
-						<p><strong>Billing Address : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium perspiciatis velit eum atque.</p>
 						<p><strong>Plan Name : </strong>Lorem ipsum dolor</p>
+						<p><strong>Payment Method : </strong>Card</p>
+						<p><strong>Billing Address : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium perspiciatis velit eum atque.</p>
+						<p><strong>Total Amount : </strong><span>$200</span></p>
+						<div class="form-item check-box">
+							<input type="checkbox"><span>I accept and agree to the Terms of Use and Privacy Policy.</span>
+						</div>
+						<div class="form-fields action-btn">
+							<div class="form-item">
+								<button class="cancel-btn">Cancel</button>
+								<button class="submit-btn">Place Order</button>
+							</div>
+						</div>
+					</div>
+					<div class="payment-img">
+						<img src="img/payment-img.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="step step-three thank-you">
+				<div class="payment">
+					<div class="payment-content">
+						<h3>Your booking is confirmed</h3>
+						<h4>John Smith, congratulation! your booking have been confirmed</h4>
+						<p><strong>Booking code :</strong> 7898</p>
 						<p><strong>Payment Method : </strong>Card</p>
 						<p><strong>Total Amount : </strong><span>$200</span></p>
 					</div>
 					<div class="payment-img">
 						<img src="img/payment-img.jpg" alt="">
-						<div class="short-detail">
-							<h2>Rafael Nadal</h2>
-							<p>July 13, 2018</p>
-							<p>10:00 am - 10:10 am</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -361,10 +348,14 @@
 			$(".payment-content").mCustomScrollbar();
 			$(".review-btn").click(function(){
 				$(".step").removeClass("active");
+				$(".step-two").addClass("active");
+			});
+			$(".submit-btn").click(function(){
+				$(".step").removeClass("active");
 				$(".step-three").addClass("active");
 			});
 			$(document).on("click", ".simplePopupClose", function(){
-				$(".step-three").removeClass("active");
+				$(".step").removeClass("active");
 			});
 		});
 	</script>

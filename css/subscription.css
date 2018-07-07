@@ -266,6 +266,7 @@
 }
 .payment-img img{
 	width: 100%;
+	display: block;
 }
 .payment-img:before{
 	content: "";
@@ -345,7 +346,7 @@
 	width: 50%;
 	padding: 0 5px;
 }
-.card-detail .form-item{
+.card-detail .form-item, .city, .state, .zip{
 	width: 33.33%;
 }
 .card-detail .card-number, .street{
@@ -365,20 +366,18 @@
   border-color: #979e3e;
   color: #000;
 }
-.state, .zip{
-	padding-top: 15px;
-}
-.same-add{
+.check-box{
 	width: 100%;
 }
-.same-add input{
+.check-box input{
 	width: 20px;
 	height: 20px;
 	display: inline-block;
 	position: absolute;
 }
-.same-add span{
+.check-box span{
 	padding-left: 30px;
+	display: block;
 }
 .payment-content .action-btn{
 	padding: 25px 0 15px;
@@ -403,15 +402,62 @@
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
 	background: #bdc92b;
 }
-.step-three p{
+.step p{
 	margin: 0 5px;
 	padding: 20px 0 0;
 }
-.step-three p strong{
+.step p strong{
 	font-size: 18px;
 	color: #262628;
 	font-weight: 600;
 }
-.step-three p span{
+.step p span{
 	font-size: 16px;
+}
+.step-two .check-box{
+	margin: 20px 0;
+}
+.thank-you .mCustomScrollBox{
+	display: flex;
+	align-items: center;
+}
+.thank-you h3{
+	margin: 25px 5px;
+}
+.thank-you h4{
+	padding: 0 0 0 60px;
+	font-size: 20px;
+	color: #cad430;
+	font-weight: 400;
+	position: relative;
+}
+.thank-you h4:before{
+	content: '';
+  display: block;
+  width: 8px;
+  height: 18px;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  margin: -12px 0;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  z-index: 1;
+}
+.thank-you h4:after{
+	content: '';
+  display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #cad430;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -20px 0;
 }
