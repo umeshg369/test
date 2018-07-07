@@ -1,0 +1,417 @@
+.subscription-bg{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	position: relative;
+	padding: 40% 0 0;
+}
+.subscription-bg:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -23px;
+	background: url(../img/dashboard-overlay-bg.png) center bottom repeat-x;
+	background-size: contain;
+	display: block;
+	width: 100%;
+	padding: 25% 0 0;
+	z-index: 0;
+}
+.dashboard-banner{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dashboard-banner .dashboard-banner-text{
+	position: relative;
+	z-index: 1;
+}
+.dashboard-banner h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 95px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.dashboard-banner p{
+	font-size: 28px;
+	color: #bcc2c4;
+	margin: 5px 0 50px;
+}
+.dashboard-banner a{
+	width: 200px;
+	display: inline-block;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	border: 2px solid rgba(255, 255, 255, 0.30);
+	border-radius: 30px;
+	margin: 0 12px;
+}
+.dashboard-banner a.lib-btn{
+	border-color: #c8d12b;
+}
+.wrapper{
+	position: relative;
+	top: 0;
+}
+.subscription-bg video{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.subscription-bg .video-banner{
+	display: inline-block;
+	top: 63%;
+}
+.subscription-bg:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+.tab-container .list{
+	height: 0;
+  overflow: hidden;
+}
+.tab-container .list.show-tab{
+	height: auto;
+  overflow: inherit;
+}
+.title{
+	font-size: 30px;
+	color: #b4b72f;
+	text-align: left;
+	padding: 0 0 0 45px;
+	margin-top: 0;
+	text-transform: inherit;
+}
+.tab-container{
+	clear: both;
+}
+.tab-div{
+	min-height: 500px;
+	background: #fff;
+}
+.tab-data{
+	max-width: 730px;
+	margin: 0 auto;
+	position: relative;
+}
+.tab-data .be-select-tab{
+	position: absolute;
+  top: -65px;
+  width: 100%;
+}
+.tab-data .clickme{
+	float: left;
+	width: 50%;
+}
+.tab-data .clickme a{
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	float: left;
+	font-weight: 700;
+	font-size: 18px;
+	color: #dddddd;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #111111;
+	background: #000;
+}
+.tab-data .clickme.active a, .tab-data .clickme.active a:hover{
+	color: #585858;
+	border: none;
+	background: #fff;
+}
+.subscription-content{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0 80px;
+}
+.sub-text{
+	display: inline-block;
+	width: 50%;
+	border: 1px solid #f5f5f5;
+	background: #fff;
+	box-sizing: border-box;
+	position: relative;
+	padding: 50px 35px;
+}
+.sub-text h2{
+	font-size: 72px;
+	font-weight: 200;
+	color: #585858;
+	text-align: center;
+}
+.sub-text strong{
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	display: block;
+}
+.sub-text ul{
+	padding: 50px 0 90px;
+}
+.sub-text ul li{
+	padding: 0 0 30px 35px;
+	display: block;
+	font-size: 18px;
+	color: #8d8d8d;
+	position: relative;
+}
+.sub-text ul li:before{
+  content: '';
+  display: block;
+  width: 7px;
+  height: 20px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.sub-btn{
+	width: 100%;
+	padding: 0 35px;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+}
+.sub-text button{
+	width: 100%;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background: #bdc92b;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	cursor: pointer;
+}
+.subscription-content h3{
+	font-size: 24px;
+	font-weight: 400;
+	color: #bdc92b;
+	text-align: center;
+	width: 100%;
+	margin: 65px 0;
+}
+.subscription-content p{
+	font-size: 24px;
+	color: #8d8d8d;
+	text-align: center;
+	line-height: 40px;
+	padding: 0 0 30px;
+}
+.payment-popup.height-zero{
+	padding: 0;
+}
+.payment-popup{
+	width: 100%;
+	height: 100%;
+	top: 0 !important;
+	left: 0 !important;
+	z-index: 999;
+	padding: 50px 10%;
+	text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+  justify-content: center;
+}
+.step{
+	height: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+  position: absolute;
+}
+.step.active{
+	height: auto;
+}
+.payment{
+	width: 100%;
+  height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  overflow: hidden;
+}
+.payment-content{
+	width: 40%;
+	display: inline-block;
+	background: #fff;
+}
+.payment-img{
+	width: 60%;
+	display: inline-block;
+	position: relative;
+}
+.payment-img img{
+	width: 100%;
+}
+.payment-img:before{
+	content: "";
+	display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.short-detail{
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	color: #fff;
+}
+.simplePopupClose{
+	position: fixed;
+	right: 5%;
+  top: 5%;
+}
+.short-detail h2{
+	font-size: 48px;
+	font-weight: 700
+	color: #fff;
+}
+.short-detail h3{
+	font-size: 24px;
+	font-weight: 700
+	color: #fff;
+	margin: 0 0 10px;
+}
+.short-detail p{
+	font-size: 24px;
+	color: #dedede;
+	padding: 10px 0 0;
+}
+.payment-content{
+	padding: 30px;
+}
+.payment-content h2{
+	font-size: 36px;
+	color: #031823;
+	font-weight: 700;
+	margin: 0 5px;
+}
+.shipping-add{
+	display: none;
+}
+.payment-content h3{
+	font-size: 22px;
+	color: #262628;
+	font-weight: 700;
+	margin: 25px 5px 0;
+}
+.payment-content label{
+	font-size: 14px;
+	color: #262628;
+	display: block;
+	min-height: 22px;
+	padding: 0 0 5px;
+}
+.form-item input, .form-item select, .form-item button{
+	width: 100%;
+	height: 38px;
+	border: 1px solid #676768;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+.payment-content .form-fields{
+	padding: 15px 0 0;
+	display: flex;
+  flex-wrap: wrap;
+}
+.form-item{
+	width: 50%;
+	padding: 0 5px;
+}
+.card-detail .form-item{
+	width: 33.33%;
+}
+.card-detail .card-number, .street{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.coupon-box .form-item{
+	width: 100%;
+}
+.coupon-box .form-item input{
+	width: 65%;
+}
+.coupon-box .form-item button{
+	width: 32%;
+	float: right;
+	background: #cdd660;
+  border-color: #979e3e;
+  color: #000;
+}
+.state, .zip{
+	padding-top: 15px;
+}
+.same-add{
+	width: 100%;
+}
+.same-add input{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.same-add span{
+	padding-left: 30px;
+}
+.payment-content .action-btn{
+	padding: 25px 0 15px;
+}
+.action-btn .form-item{
+	width: 100%;
+}
+.action-btn button{
+	width: 48%;
+	display: inline-block;
+  background: #cdd660;
+  border-color: #979e3e;
+  color: #000;
+}
+.action-btn .review-btn{
+	float: right;
+}
+.action-btn .cancel-btn{
+	background: #b8b8b8;
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background: #bdc92b;
+}
+.step-three p{
+	margin: 0 5px;
+	padding: 20px 0 0;
+}
+.step-three p strong{
+	font-size: 18px;
+	color: #262628;
+	font-weight: 600;
+}
+.step-three p span{
+	font-size: 16px;
+}

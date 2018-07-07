@@ -98,7 +98,61 @@ nav li.active a:after{
   width: 100%;
 	background: #b4b63b;
 }
-
+.my-account{
+	float: right;
+}
+.my-account img{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.my-account a{
+	line-height: 52px;
+	margin: 0 25px;
+}
+nav ul{
+	display: inline-block;
+}
+.my-account span{
+	width: 30px;
+	display: inline-block;
+	text-align: right;
+}
+.my-account span:after{
+  content: "\e907";
+  font-size: 0.85em;
+  font-family: icomoon;
+  color: #fff;
+  font-weight: 700;
+}
+.my-account a{
+	color: #747474;
+}
+nav ul li{
+	position: relative;
+}
+nav ul li .search-icon{
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	background: url(../img/search-icon.png) left top no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.search-box{
+	width: 260px;
+	display: none;
+	position: absolute;
+	right: 0;
+}
+.search-box input{
+	width: 100%;
+	height: 30px;
+	padding: 0 10px;
+}
 .mobIcon{
 	display: none;
 	float: right;
@@ -106,13 +160,13 @@ nav li.active a:after{
 	cursor: pointer;
 }
 .mobIcon .icon-bar {
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #bdc928;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #bdc928;
 }
 .mobIcon .icon-bar+.icon-bar {
-    margin-top: 8px;
+   margin-top: 8px;
 }
 
 #container{
