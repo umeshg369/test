@@ -3,13 +3,13 @@
 	background-position: center bottom;
 	background-size: cover;
 	position: relative;
-	padding: 40% 0 0;
+	padding: 30% 0 0;
 }
 .subscription-bg:after{
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -23px;
+	bottom: 0;
 	background: url(../img/dashboard-overlay-bg.png) center bottom repeat-x;
 	background-size: contain;
 	display: block;
@@ -106,16 +106,16 @@
 	margin: 0 auto;
 	position: relative;
 }
-.tab-data .be-select-tab{
+.tab-data > ul{
 	position: absolute;
   top: -65px;
   width: 100%;
 }
-.tab-data .clickme{
+.tab-data > ul li{
 	float: left;
 	width: 50%;
 }
-.tab-data .clickme a{
+.tab-data > ul li span{
 	width: 100%;
 	height: 65px;
 	line-height: 65px;
@@ -129,11 +129,14 @@
 	box-sizing: border-box;
 	border: 1px solid #111111;
 	background: #000;
+	opacity: 0.5;
 }
-.tab-data .clickme.active a, .tab-data .clickme.active a:hover{
+.tab-data > ul li.active span, .tab-data > ul li.active span:hover{
 	color: #585858;
 	border: none;
 	background: #fff;
+	font-size: 22px;
+	opacity: 1;
 }
 .subscription-content{
 	display: flex;

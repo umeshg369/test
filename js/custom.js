@@ -321,4 +321,9 @@ jQuery(document).ready(function($){
     $(".step-one").addClass("active");
   });
 
+  $('.tab-data .clickme span').click(function(){
+  	$(".tab-data .clickme").removeClass("active");
+  	$(this).parent().addClass("active");
+  });
+
 });
