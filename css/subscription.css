@@ -109,6 +109,7 @@
 .tab-data > ul{
 	position: absolute;
   top: -65px;
+  left: 0;
   width: 100%;
 }
 .tab-data > ul li{
@@ -164,7 +165,7 @@
 	text-align: center;
 	display: block;
 }
-.sub-text ul{
+.tab-data .sub-text ul{
 	padding: 50px 0 90px;
 }
 .sub-text ul li{
@@ -233,7 +234,7 @@
 	top: 0 !important;
 	left: 0 !important;
 	z-index: 999;
-	padding: 50px 10%;
+	padding: 50px 5%;
 	text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -246,6 +247,7 @@
   margin: 0 auto;
   text-align: left;
   position: absolute;
+  width: 90%;
 }
 .step.active{
 	height: auto;

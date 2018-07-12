@@ -322,6 +322,38 @@
 			$(document).on("click", ".simplePopupClose", function(){
 				$(".step").removeClass("active");
 			});
+
+			$(".same-add input").click(function(){
+			});
+			if($(window).width() < 768){
+				$(".month-plan").click(function(){
+					$(".sub-text").hide();
+					$(".by-month").show();
+				});
+				$(".year-plan").click(function(){
+					$(".sub-text").hide();
+					$(".by-year").show();
+				});
+				var $window = $(window),
+			  $wrapper = $('.payment-content');
+				$window.resize(function(){
+			    $wrapper.css({
+		        height: $window.height() - 100,
+			    });
+				}).resize();
+			}
+			$(window).resize(function(){
+				if($(window).width() < 768){
+					$(".month-plan").click(function(){
+						$(".sub-text").hide();
+						$(".by-month").show();
+					});
+					$(".year-plan").click(function(){
+						$(".sub-text").hide();
+						$(".by-year").show();
+					});
+				}
+			});
 		});
 	</script>
 </html>
