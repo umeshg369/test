@@ -35,6 +35,11 @@ body{
 }
 header{
 	width: 100%;
+	padding: 30px 0;	
+	float: left;
+}
+.home header{
+	padding: 0;
 	position: absolute;
 	top: 30px;
 	left: 0;
@@ -356,6 +361,9 @@ nav ul li .search-icon{
 }
 .inner{
 	padding: 0 70px;
+}
+.wrapper{
+	clear: both;
 }
 .about{
 	width: 100%;
