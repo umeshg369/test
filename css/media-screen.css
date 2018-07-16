@@ -624,7 +624,7 @@
 		margin: 5px 0 0;
 		padding: 0;
 	}
-	.videolib-detail .dashboard-bg{
+	.videolibrary-page .videolib-detail .dashboard-bg{
 		padding: 60% 0 0;
 	}
 	.category-page .videolib-detail .dashboard-bg{
@@ -671,7 +671,7 @@
 	.sub-text{
 		padding: 25px;
 	}
-	.subscription-bg{
+	.subscription-bg, .videolibrary-page .dashboard-bg{
 		padding: 40% 0 0;
 	}
 	.subscription-page .tab-data > ul{
