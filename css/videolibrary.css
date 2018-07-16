@@ -27,12 +27,12 @@ nav ul{
   color: #fff;
   font-weight: 700;
 }
-.dashboard-bg{
+.videolibrary-page .dashboard-bg{
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
 	position: relative;
-	padding: 40% 0 0;
+	padding: 30% 0 0;
 }
 .dashboard-bg:after{
 	content: "";
